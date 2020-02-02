@@ -1,0 +1,16 @@
+Tutorial 1: Starting a Thread
+    How to create a thread?
+    -> Extend Thread class
+    -> Implement Runnable interface and pass it to constructor of a new thread object
+        -> As Runnable is a functional interface, it is possible to create a using anonymous function call of Runnable interface and override run method
+
+Tutorial 2: Basic Thread Synchronization
+    Volatile -> This keyword prevents an optimizing compiler from optimizing away subsequent reads or writes and thus incorrectly reusing a stale value or omitting writes.
+
+Tutorial 3: Synchronization using synchronized keyword
+    synchronized keyword provides intrinsic lock to the method and allows only one thread to acquire the lock at any point of time. Every object of the class has separate intrinsic lock.(If objects of same class is created, then 2 threads can call the synchronized method of those 2 objects simultaneously)
+    Atomic... classes to help to get thread synchronization
+
+Tutorial 4: Multiple locks using synchronized blocks
+
+If synchronized is used for a method, it slows down the performance. So use synchronized block
